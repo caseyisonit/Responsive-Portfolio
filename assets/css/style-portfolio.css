@@ -34,10 +34,3 @@
     bottom: -180px;
     width: 100%;
 }
-
-@media screen and (max-width: 768px) {
-  .flex-container > div {
-    width: 48%;
-
-  }
-}
