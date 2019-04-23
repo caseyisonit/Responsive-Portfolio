@@ -1,0 +1,141 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.wrap-all, nav {
+    margin: 0 auto;
+    width: 960px;
+}
+
+body {
+    background: #eee;
+    background-image: url("../images/floor-tile.png");
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navigation css */
+.header {
+    background: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .15);
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    background: teal;
+    float: left;
+    font-size: 36px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    padding: 30px;
+}
+
+.main-menu {
+    font-size: 16px;
+    color: #666;
+    text-decoration-line: none;
+    margin-left: 15px;
+}
+
+#middle-link {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 0 15px;
+}
+
+nav {
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    float: right;
+    padding: 35px 0px;
+}
+/* end navigation css */
+
+/* homepage/about content css */
+.content-box {
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 140px;
+    padding: 30px;
+}
+
+#profile-pic {
+    width: 245px;
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
+h2 {
+    color: teal;
+    border-bottom:  1px solid #ccc;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+/* end homepage/about content css */
+
+/* footer css */
+footer {
+    bottom: 0;
+    background-color: darkslategrey;
+    box-shadow: 0 -5px mediumturquoise;
+    color: white;
+    left: 0;
+    margin-top: 50px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.footer {
+    padding-top: 50px;
+}
+
+/* start of responsive code */
+
+@media screen and (max-width: 980px) {
+    .wrap-all, nav {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap-all, nav {
+        width: 90%;
+        /* margin: 0 20px; */
+    }
+
+    h1 {
+        /* font-size: 32px; */
+    }
+
+    h2 {
+        /* font-size: 28px; */
+    }
+
+@media screen and (max-width: 640px) {
+        .wrap-all, nav {
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+       .header {
+           /* position: static; */
+       }
+    }
